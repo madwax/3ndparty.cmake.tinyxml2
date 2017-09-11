@@ -29,5 +29,5 @@ target_link_libraries( tinyxml2 PRIVATE ${tinyxml2_LINK} ${tinyxml2_LINK_PRIVATE
 
 target_include_directories( tinyxml2 INTERFACE $<BUILD_INTERFACE:${tinyxml2_INCLUDE_DIR}> )
 target_compile_definitions( tinyxml2 INTERFACE ${tinyxml2_DEFINES} )
-target_link_libraries( tinyxml2 INTERFACE ${tinyxml2_LINK} )
+target_link_libraries( tinyxml2 INTERFACE $<BUILD_INTERFACE:${tinyxml2_LINK}> )
 
